@@ -1,14 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="ja">
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<meta http-equiv="Content-Style-Type" content="text/css"/>
-		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
 		<title>Welcome</title>
 		<script type="text/javascript">
 			<!--
 			function showHello() {
-			var name = document.getElementById("input_name").value;
+			var name = document.getElementById("name_text").value;
 			alert("Hello, " + name);
 			}
 			// -->
@@ -17,7 +17,7 @@
 	<body>
 		<div id="main" style="text-align:center;">
 			<h2>for CV</h2>
-			<label for="input_name">名前：</label><input id="input_name" />
+			<label for="name_text">名前：</label><input id="name_text" name="name_text" value="">
 		</div>
 		<div id="button" style="text-align:right;">
 			<button type="button" name="name_button" onclick="showHello()">Click me!</button>
