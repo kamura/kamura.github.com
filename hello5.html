@@ -6,8 +6,9 @@
 		<script type="text/javascript">
 			<!--
 			function showHello() {
-			var name = document.getElementById("name_text").value;
-			alert("Hello, " + name);
+			  var name = document.getElementById("name_text").value;
+			  var message = "Hiy, " + name;
+			  document.getElementById("message").innerHTML = message;
 			}
 			// -->
 		</script>
@@ -20,6 +21,8 @@
 		</div>
 		<div id="button" style="text-align:right;">
 			<button type="button" name="name_button" onclick="showHello()" style="padding: 5px 5px;">Click me!</button>
+		</div>
+		<div id="message" style="text-align:center;">
 		</div>
 	</body>
 </html>
